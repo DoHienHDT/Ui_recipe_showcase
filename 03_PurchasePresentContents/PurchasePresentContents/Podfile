@@ -1,0 +1,35 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'PurchasePresentContents' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for PurchasePresentContents
+
+  # その他の処理で利用するライブラリ
+  pod 'PINRemoteImage', '3.0.0-beta.14'
+
+  # UIレシピブックVol.1でも紹介したライブラリ
+  pod 'FontAwesome.swift'
+  pod 'Cosmos'
+
+  # UI実装で今回新しく紹介するライブラリ
+  pod 'DeckTransition'
+  pod 'AnimatedCollectionViewLayout'
+  pod 'PinterestSegment'
+  pod 'ARNTransitionAnimator'
+  pod 'FloatingPanel'
+  pod 'SkeletonView'
+end
+
+# PinterestSegmentのライブラリバージョンをSwift4.2に固定する
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    if ['PinterestSegment'].include? target.name
+      target.build_configurations.each do |config|
+        config.build_settings['SWIFT_VERSION'] = '4.2'
+      end
+    end
+  end
+end

@@ -1,0 +1,36 @@
+[
+    {
+        "topics": [
+            {
+                "id": 1,
+                "title": "門出や出会いを彩る桜の花びら",
+                "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter02/slider/slider_sample1.jpg"
+            },
+            {
+                "id": 2,
+                "title": "京都の栄華の歴史を表す金閣寺",
+                "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter02/slider/slider_sample2.jpg"
+            },
+            {
+                "id": 3,
+                "title": "世界遺産認定された白川郷の雪景色",
+                "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter02/slider/slider_sample3.jpg"
+            },
+            {
+                "id": 4,
+                "title": "清々しい後味と苦味がとても嬉しい抹茶",
+                "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter02/slider/slider_sample4.jpg"
+            },
+            {
+                "id": 5,
+                "title": "日本独自のご飯と具材の小宇宙どんぶり",
+                "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter02/slider/slider_sample5.jpg"
+            },
+            {
+                "id": 6,
+                "title": "自然の情緒が溢れ出す日本庭園の佇まい",
+                "image_url": "https://s3-ap-northeast-1.amazonaws.com/ios-ui-recipe-book/vol2_chapter02/slider/slider_sample6.jpg"
+            }
+        ]
+    }
+]

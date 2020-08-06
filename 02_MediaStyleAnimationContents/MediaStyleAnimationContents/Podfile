@@ -1,0 +1,37 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'MediaStyleAnimationContents' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for MediaStyleAnimationContents
+ 
+  # その他の処理で利用するライブラリ
+  pod 'SwiftyJSON'
+  pod 'Alamofire' 
+  pod 'PromiseKit'
+  pod 'AlamofireImage'
+
+  # UIレシピブックVol.1でも紹介したライブラリ
+  pod 'FontAwesome.swift'
+  pod 'ActiveLabel'
+
+  # UI実装で今回新しく紹介するライブラリ
+  pod 'Floaty'
+  pod 'FSPagerView'
+  pod 'SVProgressHUD'
+  pod 'BTNavigationDropdownMenu'
+  pod 'Toast-Swift', '~> 5.0.0'
+end
+
+# BTNavigationDropdownMenuのライブラリバージョンをSwift4.2に固定する
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    if ['BTNavigationDropdownMenu'].include? target.name
+      target.build_configurations.each do |config|
+        config.build_settings['SWIFT_VERSION'] = '4.2'
+      end
+    end
+  end
+end
